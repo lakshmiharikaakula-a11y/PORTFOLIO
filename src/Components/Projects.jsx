@@ -1,7 +1,7 @@
 import React from 'react'
 import '../Styles/Projects.css'
 import kedia from '../assets/kedia.png'
-import feane from '../assets/feane.png'
+import feane from '../assets/feane.PNG'
 import portfolio from '../assets/portfolio.png'
 export default function Projects() {
   return (

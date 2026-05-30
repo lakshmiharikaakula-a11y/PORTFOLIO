@@ -1,0 +1,114 @@
+.project-container{
+    min-height:100vh;
+    padding:100px;
+    display:grid;
+    grid-template-columns:repeat(auto-fit, minmax(300px, 1fr));
+    gap:30px;
+}
+.project-container h1{
+    grid-column:1/-1;
+    font-size:50px;
+      color:#c084fc;
+    margin-bottom:50px;
+    text-align:center;
+    position:relative;
+    text-shadow:0px 0px 15px rgba(192,132,252,0.4);
+}
+/* underline */
+.project-container h1::after{
+    content:"";
+    position:absolute;
+    left:50%;
+    bottom:-10px;
+    transform:translateX(-50%);
+    width:140px;
+    height:4px;
+     background:linear-gradient(to right,#a855f7,#7c3aed);
+    border-radius:10px;
+}
+.project-card{
+     background:linear-gradient(145deg,#111827,#1e1b4b);
+    padding:30px;
+    border-radius:15px;
+    border:2px solid transparent;
+    transition:0.3s;
+    box-shadow:0px 0px 15px rgba(0,0,0,0.3);
+}
+.project-card:hover{
+    transform:translateY(-10px);
+    border-color:#a855f7;
+    box-shadow:0px 0px 25px rgba(168,85,247,0.5),0px 0px 40px rgba(56,189,248,0.2);
+}
+.project-card img{
+    width:100%;
+    height:200px;
+    object-fit:contain;
+    transition:0.3s;
+}
+.project-card img:hover{
+    transform:scale(1.05);
+}
+.project-card h2{
+    color:#c084fc;
+    margin-bottom:15px;
+    font-size:26px;
+}
+.project-card p{
+    color:#cbd5e1;
+    line-height:26px;
+    margin-bottom:10px;
+    font-size:15px;
+}
+.buttons{
+    margin-top:15px;
+    display:flex;
+    gap:15px;
+}
+.buttons a{
+    text-decoration:none;
+    padding:8px 15px;
+    border-radius:6px;
+    background:linear-gradient(to right,#a855f7,#7c3aed);
+    color:black;
+    font-weight:bold;
+    transition:0.3s;
+}
+.buttons a:hover{
+    background:linear-gradient(to right,#9333ea,#7e22ce);
+    box-shadow:0px 0px 15px rgba(168,85,247,0.5);
+    transform:scale(1.05);
+}
+@media (max-width:768px){
+    .project-container{
+        padding:80px 20px;
+        grid-template-columns:1fr;
+        gap:20px;
+    }
+    .project-container h1{
+        font-size:34px;
+        margin-bottom:30px;
+    }
+    .project-container h1::after{
+        width:100px;
+    }
+    .project-card{
+        padding:20px;
+    }
+    .project-card img{
+        height:180px;
+    }
+    .project-card h2{
+        font-size:20px;
+    }
+    .project-card p{
+        font-size:14px;
+        line-height:24px;
+    }
+    .buttons{
+        flex-direction:column;
+        gap:10px;
+    }
+    .buttons a{
+        text-align:center;
+    }
+}

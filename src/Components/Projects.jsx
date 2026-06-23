@@ -3,6 +3,7 @@ import '../Styles/Projects.css'
 import kedia from '../assets/kedia.png'
 import feane from '../assets/feane.PNG'
 import portfolio from '../assets/portfolio.png'
+import expensesplit from '../assets/expensesplit.png'
 export default function Projects() {
   return (
     <div  id="projects" className="project-container">
@@ -41,8 +42,22 @@ export default function Projects() {
              </p>
             <p>Tech Stack: React, CSS, JavaScript</p>
             <div className="buttons">
-                <a href="#">GitHub</a>
-                <a href="#">Live Demo</a>
+                <a href="https://github.com/lakshmiharikaakula-a11y/PORTFOLIO.git" target="_blank">GitHub</a>
+                <a href="https://portfolio-r9lr.vercel.app/" target="_blank">Live Demo</a>
+            </div>
+        </div>
+
+         <div className="project-card">
+              <img src={expensesplit} alt="expensesplit" />
+             <h2>Expense-split calculator</h2>
+             <p>
+              A React app that splits bills among people, includes tip calculation, 
+                and shows inline error messages for invalid inputs.
+             </p>
+            <p>Tech Stack: React, CSS, JavaScript</p>
+            <div className="buttons">
+                <a href="#" target="_blank">GitHub</a>
+                <a href="#" target="_blank">Live Demo</a>
             </div>
         </div>
     </div>

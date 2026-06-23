@@ -56,8 +56,8 @@ export default function Projects() {
              </p>
             <p>Tech Stack: React, CSS, JavaScript</p>
             <div className="buttons">
-                <a href="#" target="_blank">GitHub</a>
-                <a href="#" target="_blank">Live Demo</a>
+                <a href="https://github.com/lakshmiharikaakula-a11y/PORTFOLIO.git" target="_blank">GitHub</a>
+                <a href="https://portfolio-r9lr.vercel.app/" target="_blank">Live Demo</a>
             </div>
         </div>
     </div>

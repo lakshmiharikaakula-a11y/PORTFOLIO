@@ -18,7 +18,7 @@ export default function Projects() {
                 <p>Tech Stack: HTML, CSS, JavaScript</p>
                 <div className="buttons">
                     <a href="https://github.com/lakshmiharikaakula-a11y/JS-project.git" target="_blank">GitHub</a>
-                    <a href="js-project-six-topaz.vercel.app" target="_blank">Live Demo</a>
+                    <a href="https://js-project-six-topaz.vercel.app" target="_blank">Live Demo</a>
                 </div>
         </div>
          <div className="project-card">
